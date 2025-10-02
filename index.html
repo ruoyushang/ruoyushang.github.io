@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Alex Chen | Research Portfolio</title>
+    <title>Dr. Ruo-Yu Shang | Research Portfolio</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -92,10 +92,10 @@
                 Hi, I'm <span class="text-accent">Dr. Alex Chen</span>
             </h1>
             <h2 class="text-xl sm:text-2xl font-medium text-gray-400 mb-6">
-                Applied Data Scientist | <span class="font-semibold text-white">Computational Physics</span> and <span class="font-semibold text-white">Neural Networks</span>
+                Astrophysicist | <span class="font-semibold text-white">Astrophysics</span> and <span class="font-semibold text-white">Neuroscience</span>
             </h2>
             <p class="text-lg text-gray-400 leading-relaxed mb-8 max-w-2xl mx-auto">
-                My research focuses on developing high-performance machine learning models to solve complex, real-world problems in climate modeling and material science. I prioritize **reproducibility** and **open source** solutions.
+                My research focuses on developing analysis tools for high-dimensional data to solve complex, real-world problems in astrophysics and neuroscience.
             </p>
             <a href="#research" class="inline-block bg-accent hover:bg-blue-600 text-black font-semibold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
                 Explore My Research &rarr;
@@ -133,16 +133,30 @@
                 Key Research Projects
             </h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Changed grid layout to force a single column (grid-cols-1) and centered it -->
+            <div class="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
                 
                 <!-- Research Project 1 Card -->
                 <div class="card-bg p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-accent border border-gray-700">
-                    <h3 class="text-2xl font-semibold text-white mb-2">
-                        Fast Climate Prediction (FCP)
+                    <h3 class="text-2xl font-semibold text-white mb-4">
+                        Nonnegative Independent Component Analysis
                     </h3>
-                    <p class="text-gray-400 mb-4 text-sm">
+                    
+                    <!-- Placeholder for Image/Figure -->
+                    <div class="mb-4 rounded-lg overflow-hidden border border-gray-600">
+                        <img src="https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+1%3A+Model+Architecture+Visualization" alt="FCP Model Visualization" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+1%3A+Model+Architecture+Visualization'">
+                        <p class="text-xs text-gray-500 p-2 bg-gray-900 text-center">Conceptual Diagram or Core Result Figure</p>
+                    </div>
+
+                    <p class="text-gray-400 mb-4 text-base">
                         Development of a novel recurrent neural network architecture for ultra-fast, long-term climate trend forecasting, reducing simulation time by 95%. Focused on model efficiency and energy usage.
                     </p>
+
+                    <!-- Placeholder for Video/Demo -->
+                    <div class="mb-4 w-full h-48 bg-gray-800 flex items-center justify-center rounded-lg border border-accent/50">
+                        <span class="text-gray-500 text-sm">VIDEO DEMO: FCP Simulation Run</span>
+                    </div>
+                    
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-gray-700 text-xs font-medium text-red-400 px-2 py-0.5 rounded-full">TensorFlow</span>
                         <span class="bg-gray-700 text-xs font-medium text-green-400 px-2 py-0.5 rounded-full">GPU Optimization</span>
@@ -154,12 +168,25 @@
 
                 <!-- Research Project 2 Card -->
                 <div class="card-bg p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-accent border border-gray-700">
-                    <h3 class="text-2xl font-semibold text-white mb-2">
+                    <h3 class="text-2xl font-semibold text-white mb-4">
                         Material Structure Generator (MSG)
                     </h3>
-                    <p class="text-gray-400 mb-4 text-sm">
+                    
+                    <!-- Placeholder for Image/Figure -->
+                    <div class="mb-4 rounded-lg overflow-hidden border border-gray-600">
+                        <img src="https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+2%3A+GAN+Output+Material+Structure" alt="MSG GAN Output" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+2%3A+GAN+Output+Material+Structure'">
+                        <p class="text-xs text-gray-500 p-2 bg-gray-900 text-center">Example of Synthesized Alloy Structure</p>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-4 text-base">
                         A Generative Adversarial Network (GAN) trained on spectroscopic data to predict and design new high-entropy alloy structures with specific desired properties. Focus on materials science.
                     </p>
+
+                    <!-- Placeholder for Video/Demo -->
+                    <div class="mb-4 w-full h-48 bg-gray-800 flex items-center justify-center rounded-lg border border-accent/50">
+                        <span class="text-gray-500 text-sm">VIDEO DEMO: Structure Generation Process</span>
+                    </div>
+
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-gray-700 text-xs font-medium text-yellow-400 px-2 py-0.5 rounded-full">PyTorch</span>
                         <span class="bg-gray-700 text-xs font-medium text-purple-400 px-2 py-0.5 rounded-full">GANs / Theory</span>
@@ -171,12 +198,25 @@
 
                 <!-- Research Project 3 Card -->
                 <div class="card-bg p-6 rounded-xl shadow-xl transition duration-300 hover:shadow-2xl hover:border-accent border border-gray-700">
-                    <h3 class="text-2xl font-semibold text-white mb-2">
+                    <h3 class="text-2xl font-semibold text-white mb-4">
                         Robust Uncertainty Quantification
                     </h3>
-                    <p class="text-gray-400 mb-4 text-sm">
+                    
+                    <!-- Placeholder for Image/Figure -->
+                    <div class="mb-4 rounded-lg overflow-hidden border border-gray-600">
+                        <img src="https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+3%3A+Confidence+Intervals+Plot" alt="UQ Confidence Intervals" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+3%3A+Confidence+Intervals+Plot'">
+                        <p class="text-xs text-gray-500 p-2 bg-gray-900 text-center">Uncertainty Quantification Results</p>
+                    </div>
+                    
+                    <p class="text-gray-400 mb-4 text-base">
                         Implementing Bayesian methods and dropout layers to provide robust confidence intervals for deep learning predictions in safety-critical engineering applications.
                     </p>
+
+                    <!-- Placeholder for Video/Demo -->
+                    <div class="mb-4 w-full h-48 bg-gray-800 flex items-center justify-center rounded-lg border border-accent/50">
+                        <span class="text-gray-500 text-sm">VIDEO DEMO: UQ Analysis Tool</span>
+                    </div>
+
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="bg-gray-700 text-xs font-medium text-blue-400 px-2 py-0.5 rounded-full">Bayesian ML</span>
                         <span class="bg-gray-700 text-xs font-medium text-gray-300 px-2 py-0.5 rounded-full">Python/JAX</span>
