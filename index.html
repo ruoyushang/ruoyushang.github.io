@@ -253,19 +253,19 @@
                     </h3>
 
                     <p class="text-gray-400 mb-4 text-base">
-                        Analyses of Imaging Atmospheric Cherenkov Telescope (IACT) data for extended gamma-ray sources, such as TeV halos, evolved pulsar wind nebulae, and star clusters face the issue that the field of view does not offer sufficient regions for background estimations.
-                        In cases when the source angular size exceeds or occupies a significant part of the field of view, I developed an independent background estimation algorithm to carry out IACT analyses and have a better understanding of the systematic uncertainties.
-                        The new algorithm learns the low-dimension representations of cosmic-ray event distributions to derive the estimation for background gamma-like events in the source region.
-                        This algorithm allows reliable energy-dependent morphology measurements for sources with large angular extends, which will help the next-generation Cherenkov Telescope Array to reach its full potential capacity of wide field-of-view observations.
+                        Imaging Atmospheric Cherenkov Telescopes (IACTs) are the main ground-based instruments for detecting very-high-energy (VHE) gamma rays (typically from ∼ 50 GeV up to hundreds of TeV).
+                        Since gamma rays at these energies cannot penetrate Earth’s atmosphere, IACTs detect them indirectly by recording the faint Cherenkov light emitted when the gamma ray initiates an air shower.
+                        If a gamma-ray shower is observed by two telescopes, the location of the source image can be determined by superimposing the two images of the same shower and intersecting the two major axes.
+                        I developed a new algorithm with an assumption of the position uncertainties of the Cherenkov photons in the camera frame, derived the uncertainties on the image orientation and the center of mass, and further reconstructed the gamma-ray source location and estimated the reconstruction uncertainty.
+                        This new algorithm generalizes the reconstruction and uncertainty estimation for events of mixed types of telescopes with different camera pixel sizes, which is crucial for the CTAO.
                     </p>
                     
                     <!-- Placeholder for Image/Figure -->
                     <div class="mb-4 rounded-lg overflow-hidden border border-gray-600">
                         <img src="./hillas_1.png" alt="FCP Model Visualization" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+1%3A+Model+Architecture+Visualization'">
                         <p class="text-xs text-white p-2 bg-gray-900">
-                            The maps of model error significance in camera frame and the projected 1-D distributions of the background model (red curves) and data events (black points). 
-                            The background models are using k=1 (1st panel), k=2 (2nd panel), k=4 (3rd panel), and k=32 (4th panel).
-                            The figure demonstrates that by including more singular vectors (higher k), the background model achieves better accuracy.
+                            Illustration of gamma-ray event reconstruction. 
+                            A gamma-ray shower is observed by two telescopes, and location of the source is deteermined intersecting the major axes of the two images.
                         </p>
                     </div>
 
@@ -273,8 +273,9 @@
                     <div class="mb-4 rounded-lg overflow-hidden border border-gray-600">
                         <img src="./hillas_2.png" alt="FCP Model Visualization" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+1%3A+Model+Architecture+Visualization'">
                         <p class="text-xs text-white p-2 bg-gray-900">
-                            The STOICS algorithm enables the analyses of extended gamma-ray sources.
-                            The applications of some famous Galactic sources include MGRO J1908+06 (1st panel), Dragonfly PWN (2nd panel), Gamma-Cygni SNR (3rd panel), and Cygnus coccon (4th panel).
+                            Top-left and bottom-left: The estimated image uncertainty on image orientation for two shower images. 
+                            Right: The source reconstruction and the reconstruction confidence intervals of an event of two images. 
+                            The color scale shows the intensity in each pixel, the gray dashed lines show the major axes of the two images, the red cross indicates the true source location, and the dashed and the solid contours show the 39% and 86% reconstruction confidence intervals, respectively.
                         </p>
                     </div>
 
@@ -282,8 +283,9 @@
                     <div class="mb-4 rounded-lg overflow-hidden border border-gray-600">
                         <img src="./hillas_3.png" alt="FCP Model Visualization" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+1%3A+Model+Architecture+Visualization'">
                         <p class="text-xs text-white p-2 bg-gray-900">
-                            The STOICS algorithm enables the analyses of extended gamma-ray sources.
-                            The applications of some famous Galactic sources include MGRO J1908+06 (1st panel), Dragonfly PWN (2nd panel), Gamma-Cygni SNR (3rd panel), and Cygnus coccon (4th panel).
+                            The PSF (point spread function) comparison between the conventional method and the new method. 
+                            In the core of the PSF (39% containment), the new method shows improvement mainly in the low-energy range (< 0.1 TeV). 
+                            Including the core and the tail of the PSF (86% containment), the new method shows significant improvement across the full energy range.
                         </p>
                     </div>
                     
