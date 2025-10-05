@@ -308,9 +308,8 @@
                         Imaging Atmospheric Cherenkov Telescopes (IACTs) are the main ground-based instruments for detecting very-high-energy (VHE) gamma rays (typically from ∼ 50 GeV up to hundreds of TeV).
                         Since gamma rays at these energies cannot penetrate Earth’s atmosphere, IACTs detect them indirectly by recording the faint Cherenkov light emitted when the gamma ray initiates an air shower.
                         The Cherenkov images are contaminated by noise, and the sources of noise, including atomic airglow emission lines, Galactic plane, light pollution from distant cities, are dynamic with unknown spectra.
-                        I applied the diffusion denoising model, which is robust in handling noise of unknown distributions, to remove the noise in Cherenkov imaging data and improve the efficiency of gamma-ray telescopes.
-                        A covolutional neural network (CNN) is trained to remove Gaussian noise in simulated data, which learns the the score of the probability density function of the data.
-                        Then the diffusion denoising model uses the trained CNN to remove the non-Gaussian noise sequentially.
+                        A covolutional neural network (CNN) is trained to remove Gaussian noise in simulated data, which learns the the score of the probability density function of the simulated data.
+                        Then I applied the diffusion denoising model, which allows the CNN model to generalize to real observational noise sources with unknown and dynamic spectra, to remove the non-Gaussian noise in Cherenkov imaging data sequentially and improve the efficiency of gamma-ray telescopes.
                     </p>
                     
                     <!-- Placeholder for Image/Figure -->
