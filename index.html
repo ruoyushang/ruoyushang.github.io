@@ -307,15 +307,17 @@
                         Since gamma rays at these energies cannot penetrate Earth’s atmosphere, IACTs detect them indirectly by recording the faint Cherenkov light emitted when the gamma ray initiates an air shower.
                         The Cherenkov images are contaminated by noise, and the sources of noise, including atomic airglow emission lines, Galactic plane, light pollution from distant cities, are dynamic with unknown spectra.
                         I applied the diffusion denoising model, which is robust in handling noise of unknown distributions, to remove the noise in Cherenkov imaging data and improve the efficiency of gamma-ray telescopes.
+                        A covolutional neural network (CNN) is trained to remove Gaussian noise in simulated data, which learns the the score of the probability density function of the data.
+                        Then the diffusion denoising model uses the trained CNN to remove the non-Gaussian noise sequentially.
                     </p>
                     
                     <!-- Placeholder for Image/Figure -->
                     <div class="mb-4 rounded-lg overflow-hidden border border-gray-600 mx-auto">
                         <img src="./denoiser.png" alt="FCP Model Visualization" class="w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/800x400/21262d/c9d1d9?text=FIGURE+1%3A+Model+Architecture+Visualization'">
                         <p class="text-xs text-white p-2 bg-gray-900"> 
-                            A example that shows the performance of the universal image denoiser.
+                            An example that shows the performance of the universal image denoiser.
                             Top-left figure: The originally observed noisy image data.
-                            Rest of figures: The cleaned image at each step of the denoising algorithm.
+                            Rest of figures: The cleaned image at each sequential step of the denoising algorithm.
                         </p>
                     </div>
                     
@@ -344,7 +346,7 @@
         <div class="max-w-5xl mx-auto my-12 border-t border-gray-700"></div>
 
         <!-- 4. Publications Section -->
-        <!-- <section id="publications" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <section id="publications" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <h2 class="text-3xl font-bold text-center text-white mb-12">
                 Recent Publications
             </h2>
@@ -354,48 +356,19 @@
                 <div class="card-bg p-4 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center shadow-lg hover:shadow-2xl transition duration-300">
                     <div class="flex-grow">
                         <p class="text-lg font-medium text-white">
-                            The Role of Transformer Architectures in Geospatial Climate Downscaling
+                            Geminga’s pulsar halo: an X-ray view
                         </p>
                         <p class="text-sm text-gray-500 italic mb-2">
-                            Journal of Earth System Science, Vol 45, Issue 2. (2024)
+                            A&A, 689, A326
                         </p>
                         <p class="text-xs text-gray-600">
-                            A. Chen, J. Smith, B. Lee
+                            Silvia Manconi, Jooyun Woo, Ruo-Yu Shang, et.al.
                         </p>
-                    </div>
-                    <div class="mt-3 md:mt-0 md:ml-6 flex space-x-3">
-                        <a href="#" target="_blank" class="text-accent hover:text-white border border-accent rounded-md px-3 py-1 text-sm transition duration-150">
-                            Read PDF
-                        </a>
-                        <a href="https://github.com/yourusername/geospatial-downscaling" target="_blank" class="text-black bg-accent hover:bg-blue-600 rounded-md px-3 py-1 text-sm font-medium transition duration-150">
-                            Code
-                        </a>
                     </div>
                 </div>
-
-                <div class="card-bg p-4 rounded-lg flex flex-col md:flex-row justify-between items-start md:items-center shadow-lg hover:shadow-2xl transition duration-300">
-                    <div class="flex-grow">
-                        <p class="text-lg font-medium text-white">
-                            High-Throughput Ab Initio Screening of Novel Superconductors via ML
-                        </p>
-                        <p class="text-sm text-gray-500 italic mb-2">
-                            Physical Review B, Rapid Communications. (2023)
-                        </p>
-                        <p class="text-xs text-gray-600">
-                            B. Lee, Z. Khan, A. Chen
-                        </p>
-                    </div>
-                    <div class="mt-3 md:mt-0 md:ml-6 flex space-x-3">
-                        <a href="#" target="_blank" class="text-accent hover:text-white border border-accent rounded-md px-3 py-1 text-sm transition duration-150">
-                            Read PDF
-                        </a>
-                        <a href="https://github.com/yourusername/superconductor-screening" target="_blank" class="text-black bg-accent hover:bg-blue-600 rounded-md px-3 py-1 text-sm font-medium transition duration-150">
-                            Code
-                        </a>
-                    </div>
-                </div>
+                
             </div>
-        </section> -->
+        </section>
 
     </main>
 
